@@ -1,0 +1,134 @@
+
+/**
+ * = Font Setup
+ *
+ * @package: Ecoify
+ * @version: 1.0
+ *
+ * ------------------------------------------------------------------------- */
+
+// $font-bootstrap:        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-body:             'PT Serif', serif;
+$font-title:            'Montserrat', sans-serif;
+$font-nothing:          'Nothing You Could Do', cursive;
+$font-icon-fontawesome: 'FontAwesome';
+
+
+/**
+ * = Colors Setup
+ *
+ * @package: Ecoiefy
+ * @version: 1.0
+ *
+ * ------------------------------------------------------------------------- */
+
+// colors list
+
+$color-primary:         #74717E !default;    
+$color-ebony:           #120D23 !default; 
+$color-ebony-rgba:      rgba(18, 13, 35, .7) !default;    
+$color-mantis:          #84C54F !default;    
+$color-white:           #FFFFFF !default;    
+$color-silver:          #CECDCD !default;    
+$color-alto:            #D4D4D4 !default;    
+$color-gallery:         #ECECEC !default;
+$color-saltpan:		      #F5F9F7 !default;
+$color-alabaster:	      #F8F8F8 !default;
+$color-red-orange:	    #FF3131 !default;
+$color-black-forest:	  #081004 !default;
+$color-rice-flower:	    #EDFEDF !default;
+$color-neon-carrot:     #FF9131 !default;
+$color-indigo:   			  #4F76C5 !default;
+$color-sliver:          #BBBBBB !default;
+$color-mysin:           #FFAF24 !default;
+$color-dodger-blue:     #3198FF !default;
+$color-turquoise-blue:  #56E9DF !default;
+
+// Text colors
+$color-title:         $color-ebony !default;
+$color-subtitle:      $color-ebony !default;
+$color-text:          $color-primary !default;
+
+
+// font size
+$fs-primary: 		16px;
+$fs-title: 			40px;
+$fs-subtitle: 	18px;
+$fs-x-small: 		14px;
+$fs-small: 			15px;
+$fs-medium: 		20px;
+$fs-large: 			24px;
+$fs-x-large: 		34px;
+$fs-xx-large: 	52px;
+
+
+$font-sizes: (
+  fs-primary: 		$fs-primary,
+  fs-title: 		  $fs-title,
+  fs-subtitle: 	  $fs-subtitle,
+  fs-x-small: 		$fs-x-small,
+  fs-small: 		  $fs-small,
+  fs-medium: 		  $fs-medium,
+  fs-large: 		  $fs-large,
+  fs-x-large: 		$fs-x-large,
+  fs-xx-large: 	  $fs-xx-large,
+  
+);
+
+$colors : (
+	efy-primary:      $color-primary,
+	efy-ebony:        $color-ebony,
+	efy-ebonyrgba:    $color-ebony-rgba,
+	efy-mantis:       $color-mantis,
+	efy-white:        $color-white,
+	efy-silver:       $color-silver,
+	efy-alto:         $color-alto,
+	efy-gallery:      $color-gallery,
+	efy-saltpan:	    $color-saltpan,
+	efy-alabaster:	  $color-alabaster,
+	efy-red:	        $color-red-orange,
+	efy-black:	      $color-black-forest,
+	efy-flower:	      $color-rice-flower,
+	efy-carrot:	      $color-neon-carrot,
+	efy-indigo:	      $color-indigo,
+	efy-blue:	        $color-turquoise-blue,
+	efy-sliver:	      $color-sliver,
+	efy-mysin:	      $color-mysin,
+	efy-dblue:	      $color-dodger-blue,
+);
+
+// Breakpoint values for min-width operators.
+$breakpoints : (
+  'xl',
+  'lg',
+  'md',
+  'sm',
+  'xs',
+);
+
+// Font sizes, w/ optional line-heights for each font size.
+// Null is mobile, no breakpoint.
+$efy_font_sizes: (
+  12px : 'null',
+  13px : 'null',
+  14px : 'null',
+  15px : 'null',
+  16px : 'null',
+  18px : 'null',
+  20px : 'null',
+  22px : 'null',
+  24px : 'null',
+  25px : 'null',
+  28px : 'null',
+  30px : 'null',
+  33px : 'null',
+  34px : 'null',
+  36px : 'null',
+  38px : 'null',
+  40px : 'null',
+  45px : 'null',
+  48px : 'null',
+  60px : 'null',
+  78px : 'null',
+  150px: 'null',
+);

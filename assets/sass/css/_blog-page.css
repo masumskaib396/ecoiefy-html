@@ -1,0 +1,7 @@
+.efy_blog_page_left_wrap .efy_blog_page_img {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.efy_blog_page_left_wrap .efy_blog_page_content .efy_blog_page_wrap {
+  display: flex;
+}

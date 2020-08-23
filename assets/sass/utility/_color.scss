@@ -1,0 +1,69 @@
+%apple-gradient{
+	background: #82c34e;
+	background: -moz-linear-gradient(left, #82c34e 0%, #65a234 100%);
+	background: -webkit-linear-gradient(left, #82c34e 0%,#65a234 100%);
+	background: linear-gradient(to right, #82c34e 0%,#65a234 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82c34e', endColorstr='#65a234',GradientType=1 );
+}
+.apple-gradient-bg{
+	@extend %apple-gradient;
+}
+
+
+
+
+
+// BackgroundColor classes setup
+@each $name, $color in $colors {
+  .bg-#{$name},
+  .efy_default_btn.bg-#{$name} {
+    background-color: $color;
+  }
+}
+
+// textColor classes setup
+@each $name, $color in $colors {
+  .text-#{$name},
+  .efy_default_btn.text-#{$name} {
+    color: $color;
+  }
+}
+
+.text {
+  @include modifiers($font-sizes, 'font-size', '-');
+}
+
+@each $name, $size in $font-sizes {
+  .text-#{$name} {
+    @include font-size($size);
+  }
+}
+
+@each $breakpoint in $breakpoints {
+  @include media-max(to-upper-case($breakpoint)) {
+    
+    @each $name, $color in $colors {
+      .bg-#{$breakpoint}-#{$name} {
+        background-color: $color!important;
+      }
+      .text-#{$breakpoint}-#{$name} {
+        color: $color!important;
+      }
+    }
+
+    .bg-#{$breakpoint}-none {
+      background: none !important;
+    }
+    .bgc-#{$breakpoint}-none {
+      background-color: transparent !important;
+    }
+    .bgi-#{$breakpoint}-none {
+      background-image: none !important;
+    }
+    .br-#{$breakpoint}-none {
+      br {
+        display: none !important;
+      }
+    }
+  }
+}

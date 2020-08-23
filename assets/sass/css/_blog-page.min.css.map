@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACC,2CAAkB,CACjB,aAAa,CAAE,GAAG,CAClB,QAAQ,CAAE,MAAM,CAGhB,mEAAmB,CAClB,OAAO,CAAE,IAAI",
+"sources": ["../inner_page/_blog-page.scss"],
+"names": [],
+"file": "_blog-page.min.css"
+}

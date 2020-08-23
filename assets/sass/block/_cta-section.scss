@@ -1,0 +1,35 @@
+.efy_cta_wrap {
+	padding: 65px 29px;
+	position: relative;
+	top: -85px;
+	overflow: hidden;
+	border-radius: 10px;
+	.efy_cta_left{
+		&:before{
+			content: "";
+			position: absolute;
+			width: 63px;
+			height: 61px;
+			left: -30px;
+			top: -65px;
+			background-image: url("../images/cta-icon.png");
+		}
+	}
+}
+.efy_or{
+	font-family: $font-title;
+}
+
+// v2
+
+.efy_cta_wrap.efy_cta_2 {
+	top: 0;
+	border-radius: 10px;
+	background-color: rgba(18, 13, 35, 0.58);
+	.efy_cta_left{
+		&:before{
+			content: none;
+		}
+	}
+}
+

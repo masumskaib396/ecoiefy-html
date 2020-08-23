@@ -1,0 +1,95 @@
+.icon {
+	position: relative;
+	top: 2px;
+}
+.padding_0{
+	padding: 0;
+}
+
+.efy_header_contact {
+	font-family: $font-body;
+	@include transition;
+	&:hover{
+		color: $color-ebony;
+	}
+}
+
+.efy_header_menu{
+	ul{
+		@include ecoiefy_ul;
+		li{
+			display: inline-block;
+			margin: 0 15px;
+			&:first-child{
+				margin-left: 0;
+			}
+				&:last-child{
+				margin-right: 0;
+			}
+			 a{
+				font-weight: 600;
+				color: $color-ebony;
+				@include transition;
+				&:hover{
+					color: $color-mantis;
+				}
+			}
+		}
+	}
+}
+.efy_header_2{
+	.efy_header_menu{
+		ul{
+			li{
+				a{
+					color: $color-white;
+					&:hover{
+						color: $color-mantis;
+					}
+				}
+			}
+		}
+	}
+}
+.efy_extra_menu{
+	ul{
+		@include ecoiefy_ul;
+		li{
+			display: inline-block;
+			margin: 0 15px;
+			&:first-child{
+				margin-left: 0;
+			}
+				&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+	.efy_header_cart{
+		position: relative;
+		.efy_cart_counter {
+			position: absolute;
+			font-size: .813em;
+			border: 1px solid $color-mantis;
+			z-index: 1;
+			width: 25px;
+			height: 25px;
+			display: block;
+			left: 10px;
+			top: -10px;
+			text-align: center;
+			border-radius: 100%;
+			line-height: 23px;
+		}
+
+	}
+}
+
+
+// EFY V2
+
+.efy_header_section.efy_header_2 {
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}

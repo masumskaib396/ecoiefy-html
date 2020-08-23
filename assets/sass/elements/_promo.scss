@@ -1,0 +1,76 @@
+
+.efy_promo_item{
+	.efy_promo_icon{
+		@include font-size($fs-xx-large);
+		position: relative;
+		display: inline-block;
+		z-index: 0;
+		&:before{
+			content: "\eb08";
+			font-family: 'charity_icon';
+			color: $color-mantis;
+			background-color: $color-white;
+			position: absolute;
+			right: -6px;
+			bottom: 12px;
+			z-index: 1;
+			border-radius: 100%;
+			@include font-size($fs-primary);
+		}
+	}
+	.efy_promo_content{
+		p{
+			@include font-size($fs-x-small);
+			line-height: 1.85;
+		}
+	}
+}
+
+// promo 2
+
+.efy_promo_section.efy_promo_2{
+	background-repeat: no-repeat;
+	background-size: 100% 55%;
+	background-position: center bottom;
+}
+.efy_promo_item.efy_promo_2{
+	box-shadow: 0 5px 50px rgba(0, 0, 0, 0.04);
+	padding: 35px 22px 40px;
+	.efy_promo_icon{
+		@include font-size(70px);
+		&:before{
+			content: none;
+		}
+	}
+}
+
+// promo 3
+
+.efy_promo_item.efy_promo_3{
+    display: flex;
+	justify-content: space-between;
+	.efy_single_promo_item{
+		&:hover i{
+			background-color: $color-mantis;
+			color: $color-white;
+		}
+		&:hover h3{
+			color: $color-mantis;
+		}
+		i{
+			@include font-size(55px);
+			width: 105px;
+			border: 1px solid #EBEBEB;
+			height: 105px;
+			line-height: 105px;
+			border-radius: 50px 0 50px 50px;
+			@include transition;
+		}
+		h3{
+			@include font-size($fs-small);
+			font-weight: 600;
+			@include transition;
+		}
+	}
+}
+

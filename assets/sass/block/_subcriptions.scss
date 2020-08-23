@@ -1,0 +1,165 @@
+.efy_subscribe {
+	position: relative;
+	input[type="email"]{
+		width: 100%;
+		height: 54px;
+		padding: 0 30px;
+		font-weight: 500;
+		border-radius: 50px;
+		font-family: $font-title;
+		@include font-size($fs-x-small);
+	}
+	 button{
+	 	border-radius: 50px;
+		position: absolute;
+		border: none;
+		text-transform: uppercase;
+		right: 0;
+		top: 0;
+		cursor: pointer;
+		border-radius: 50px 0 50px 50px;
+		padding: 17px 22px;
+		@include font-size($fs-subtitle);
+	 }
+}
+
+.efy_subscribe input[type="email"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #BBBBBB;
+  opacity: 1;
+}
+.efy_subscribe input[type="email"]::-moz-placeholder { /* Firefox 19+ */
+  color: #BBBBBB;
+  opacity: 1;
+}
+.efy_subscribe input[type="email"]:-ms-input-placeholder { /* IE 10+ */
+  color: #BBBBBB;
+  opacity: 1;
+}
+.efy_subscribe input[type="email"]:-moz-placeholder { /* Firefox 18- */
+  color: #BBBBBB;
+  opacity: 1;
+}
+
+
+// v2
+.efy_subscription_section{
+	position: relative;
+	&:before, &:after{
+		background-image: url(../images/v2/subscription-bg-01.png);
+		width: 376px;
+		height: 424px;
+		content: "";
+		left: 0;
+		top: 0;
+		position: absolute;
+	}
+	&:after{
+		background-image: url(../images/v2/subscription-bg-02.png);
+		left: auto;
+		right: 0;
+	}
+}
+.efy_subscription_form {
+	position: relative;
+	width: 100%;
+	input[type="email"]{
+		width: 100%;
+		height: 65px;
+		padding: 0 30px;
+		font-weight: 600;
+		border-radius: 50px;
+		background-color: $color-white !important;
+		font-family: $font-title;
+		@include font-size($fs-x-small);
+	}
+	 button{
+	 	border-radius: 50px;
+		position: absolute;
+		border: none;
+		text-transform: capitalize;
+		right: 0;
+		top: 0;
+		cursor: pointer;
+		border-radius: 50px 0 50px 50px;
+		padding: 25px 35px;
+		@include transition;
+		@include font-size($fs-x-small);
+		&:hover{
+			background-color: $color-mantis;
+		}
+	 }
+	 i {
+		@include font-size(7px);
+		font-size: 0.4375rem;
+	}
+}
+
+.efy_subscription_form input[type="email"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $color-primary;
+  opacity: .5;
+}
+.efy_subscription_form input[type="email"]::-moz-placeholder { /* Firefox 19+ */
+  color: $color-primary;
+  opacity: .5;
+}
+.efy_subscription_form input[type="email"]:-ms-input-placeholder { /* IE 10+ */
+  color: $color-primary;
+  opacity: .5;
+}
+.efy_subscription_form input[type="email"]:-moz-placeholder { /* Firefox 18- */
+  color: $color-primary;
+  opacity: .5;
+}
+
+
+// BLOG SUBSCRIPTION
+
+.efy_inner_subscription {
+	position: relative;
+	input[type="email"] {
+		width: 100%;
+		height: 54px;
+		padding: 0 30px;
+		font-weight: 500;
+		border-radius: 5px;
+		font-family: $font-title;
+		@include font-size($fs-x-small)
+	}
+	button {
+		position: absolute;
+		border: none;
+		text-transform: capitalize;
+		right: 0;
+		top: 0;
+		cursor: pointer;
+		border-radius: 0 5px 5px 0;
+		padding: 20px;
+		font-weight: 600;
+		font-family: $font-title;
+		@include transition;
+		@include font-size($fs-x-small);
+		&:hover{
+			background-color: $color-ebony;
+		}
+	}
+	i{
+		@include font-size(7px)
+	}
+}
+
+.efy_inner_subscription input[type="email"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #BBBBBB;
+  opacity: 1;
+}
+.efy_inner_subscription input[type="email"]::-moz-placeholder { /* Firefox 19+ */
+  color: #BBBBBB;
+  opacity: 1;
+}
+.efy_inner_subscription input[type="email"]:-ms-input-placeholder { /* IE 10+ */
+  color: #BBBBBB;
+  opacity: 1;
+}
+.efy_inner_subscription input[type="email"]:-moz-placeholder { /* Firefox 18- */
+  color: #BBBBBB;
+  opacity: 1;
+}

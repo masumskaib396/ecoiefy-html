@@ -1,0 +1,347 @@
+.efy_donation_banner_form {
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 0 5px 50px rgba(0, 0, 0, 0.04);
+	padding: 75px 40px;
+	position: relative;
+	z-index: 1;
+	p{
+		margin: 0;
+	}
+	h3{
+		@include font-size($fs-large);
+		font-weight: 600;
+	}
+	.efy_donation_top {
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		flex-wrap:wrap;
+		.efy_banner_donation_input {
+			position: relative;
+			flex: 0 0 29%;
+			input{
+				padding: 20px 15px 20px 40px;
+				font-weight: 600;
+				font-family: $font-title;
+				@include font-size($fs-x-small);
+			}
+			span{
+				position: absolute;
+				@include font-size(32px);
+			  	font-weight: bold;
+			  	color: #04300E;
+			  	top: 50%;
+			  	left: 10px;
+				transform: translateY(-50%);
+			}
+			input[type="radio"]:checked ~ label {
+				color: $color-mantis;
+			}
+			[type="radio"]:checked,
+			[type="radio"]:not(:checked){
+				position: absolute;
+	  			left: -9999px;
+			}
+			[type="radio"]:checked + label, 
+			[type="radio"]:not(:checked) + label {
+			  position: relative;
+			  padding-left: 30px;
+			  cursor: pointer;
+			  line-height: 20px;
+			  display: inline-block;
+			  color: $color-ebony;
+			  margin: 0;
+			  @include font-size(32px);
+			  @include transition;
+			  font-weight: bold;
+			}
+			[type="radio"]:checked + label:before, 
+			[type="radio"]:not(:checked) + label:before {
+			  content: "";
+			  position: absolute;
+			  left: 0;
+			  top: 0;
+			  width: 22px;
+			  height: 22px;
+			  border: 6px solid $color-white;
+			  border-radius: 100%;
+			  background-color: #DDF1E7;
+			  box-shadow: 0 3px 17px rgba(0, 0, 0, 0.16);
+			}
+			[type="radio"]:checked + label:after, 
+			[type="radio"]:not(:checked) + label:after {
+			  content: "";
+			  width: 12px;
+			  height: 12px;
+			  background-color: $color-mantis;
+			  position: absolute;
+			  top: 5px;
+			  left: 5px;
+			  border-radius: 100%;
+			  @include transition;
+			}
+			[type="radio"]:not(:checked) + label:after {
+			  opacity: 0;
+			  -webkit-transform: scale(0);
+			  transform: scale(0);
+			}
+			[type="radio"]:checked + label:after {
+			  opacity: 1;
+			  -webkit-transform: scale(1);
+			  transform: scale(1);
+			}
+		}
+		.efy_banner_donation_input_or {
+			padding: 0 20px 0 0;
+			 @include font-size($fs-x-small);
+			 font-family: $font-title;
+		}
+	}
+
+}
+.efy_banner_donation_bottom {
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	.efy_banner_donation_input_bottom {
+		position: relative;
+		flex: 0 0 47%;
+		background-color: $color-white;
+		padding: 15px;
+		box-shadow: 0 3px 60px rgba(0, 0, 0, 0.06);
+		[type="radio"]:checked, 
+		[type="radio"]:not(:checked) {
+		  position: absolute;
+		  left: -9999px;
+		}
+		[type="radio"]:checked + label, 
+		[type="radio"]:not(:checked) + label {
+		  position: relative;
+		  padding-left: 23px;
+		  cursor: pointer;
+		  line-height: 14px;
+		  display: inline-block;
+		  color: $color-ebony;
+		  margin: 0 0 10px;
+		  @include font-size($fs-x-small);
+		  font-family: $font-title;
+		  @include transition;
+		  font-weight: 600;
+		}
+		[type="radio"]:checked + label:before, 
+		[type="radio"]:not(:checked) + label:before {
+		  content: "";
+		  position: absolute;
+		  left: 0;
+		  top: 0;
+		  width: 14px;
+		  height: 14px;
+		  border: 2px solid #707070;
+		  border-radius: 100%;
+		  background-color: transparent;
+		}
+		[type="radio"]:checked + label:after, 
+		[type="radio"]:not(:checked) + label:after {
+		  content: "";
+		  width: 14px;
+		  height: 14px;
+		  border: 2px solid $color-mantis;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  border-radius: 100%;
+		  @include transition;
+		}
+		input[type="radio"]:checked ~ label {
+			color: #84C54F;
+		}
+		 [type="radio"]:not(:checked) + label:after {
+		  opacity: 0;
+		}
+		[type="radio"]:checked + label:after {
+		  opacity: 1;
+		}
+		p{
+		  @include font-size(10px);
+		  font-family: $font-title;
+		  font-weight: 600;
+		  margin: 0;
+		  position: relative;
+		  left: 25px;
+		}
+
+	}
+}
+
+
+.efy_inner_donation_wrap{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	flex-wrap:wrap;
+	.efy_inner_donation_input {
+		position: relative;
+		flex: 0 0 23%;
+		input{
+			padding: 27px 15px 27px 60px;
+			border-radius: 5px;
+			font-weight: 600;
+			font-family: $font-title;
+			@include font-size($fs-x-small);
+		}
+		span{
+			position: absolute;
+			@include font-size(32px);
+		  	font-weight: bold;
+		  	color: #04300E;
+		  	top: 50%;
+		  	left: 25px;
+			transform: translateY(-50%);
+		}
+		input[type="radio"]:checked ~ label {
+			color: $color-mantis;
+			border: 1px solid #DDDDDD;
+			box-shadow: none;
+		}
+		[type="radio"]:checked,
+		[type="radio"]:not(:checked){
+			position: absolute;
+  			left: -9999px;
+		}
+		[type="radio"]:checked + label, 
+		[type="radio"]:not(:checked) + label {
+		  position: relative;
+		  cursor: pointer;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  color: $color-ebony;
+		  background-color: $color-white;
+		  margin: 0;
+		  box-shadow: 0 3px 60px rgba(0, 0, 0, 0.06);
+		  width: 100px;
+		  height: 70px;
+		  border-radius: 5px;
+		  @include font-size(28px);
+		  @include transition;
+		  font-weight: 600;
+		  border: 1px solid $color-white;
+		}
+		[type="radio"]:checked + label:after, 
+		[type="radio"]:not(:checked) + label:after {
+		  content: "\eb08";
+		  font-family: "charity_icon";
+		  color: $color-mantis;
+		  position: absolute;
+		  top: 5px;
+		  right: 5px;
+		  border-radius: 100%;
+		  @include font-size(13px);
+		  @include transition;
+		}
+		[type="radio"]:not(:checked) + label:after {
+		  opacity: 0;
+		  -webkit-transform: scale(0);
+		  transform: scale(0);
+		}
+		[type="radio"]:checked + label:after {
+		  opacity: 1;
+		  -webkit-transform: scale(1);
+		  transform: scale(1);
+		}
+	}
+	.efy_inner_donation_input_or {
+		p{
+			margin: 0;
+		}
+		padding: 0 28px 0 0;
+		 @include font-size($fs-x-small);
+		 font-family: $font-title;
+		 font-weight: 600;
+	}
+}
+
+
+// efy inner donation page
+
+.efy_donation_info__title{
+	ul{
+		li{
+			display: flex;
+			align-items: center;
+			span {
+				width: 24px;
+				height: 24px;
+				line-height: 24px;
+			}
+		}
+	}
+	
+
+}
+
+.efy_donation_wraper {
+	box-shadow: 0 5px 50px rgba(0, 0, 0, 0.04);
+	display: flex;
+	position: relative;
+	top: -35px;
+	border-radius: 5px;
+}
+.efy_inner_donation_wrap_left{
+	flex: 0 0 40%;
+	padding: 30px 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	i{
+		@include font-size(110px);
+	}
+}
+
+.efy_inner_donation_form.donation_page{
+	padding: 80px 75px;
+	.efy_inner_donation_input_or{
+		padding: 0 20px 0 0;
+	}
+	.efy_banner_donation_input_bottom {
+		flex: 0 0 45%;
+		padding: 15px 25px;
+	}
+	.efy_inner_donation_input{
+		input{
+			padding: 27px 15px 27px 50px;
+		}
+		span{
+			left: 18px;
+		}
+	}
+}
+
+.efy_my_select select {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background: rgba(0, 0, 0, 0) url("../images/select-icon.png") no-repeat scroll 95% center;
+	border: 1px solid #EBEBEB;
+	box-shadow: none;
+	color: $color-ebony;
+	padding: 18px 24px;
+	width: 100%;
+	border-radius: 3px;
+	cursor: pointer;
+	@include font-size($fs-x-small);
+	font-family: $font-title;
+	font-weight: 500;
+}
+
+.efy_inner_donation_section.donation_page_2{
+	.efy_inner_donation_form.donation_page{
+		padding: 150px;		
+	}
+}
+.donation_page_2 {
+	.efy_donation_wraper{
+		width: 80%;
+		margin: 0 auto;
+	}
+}

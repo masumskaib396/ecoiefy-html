@@ -1,0 +1,84 @@
+.efy_accordion_item {
+  width: 68%;
+  margin: 0 auto;
+  .card {
+    position: relative;
+    border: none;
+    background-color: #F0F3F7;
+    margin-bottom: 15px;
+    &.card__active{
+      margin-bottom: 15px;
+      background-color: $color-saltpan;
+      border-radius: 5px !important;
+      .efy_accordion_icon{
+        &:before{
+          content: "\ec45";
+          font-family: "charity_icon";
+          position: absolute;
+          top: -12px;
+          right: 0;
+          transition: all 0.4s;
+        }
+        i{
+          display: none;
+        }
+        
+      }
+      .card-header{
+        border: 1px solid transparent;
+        background-color: transparent !important;
+      }
+    }
+    .card-header {
+      padding: 25px 65px;
+      background-color: $color-white;
+      border: 1px solid #EBEBEB;
+      transition: all 0.4s;
+      border-radius: 5px !important;
+      h3 {
+        @include font-size($fs-medium);
+        font-weight: 600;
+      }
+      .btn {
+        padding: 0;
+      }
+      .btn-link {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .card-body {
+    padding: 0px 25px 40px 70px;
+  }
+  .efy_accordion_icon {
+    position: absolute;
+    right: 30px;
+    @include font-size($fs-subtitle);
+    color: $color-mantis;
+  }
+  .efy_question_icon {
+      position: absolute;
+      left: 30px;
+    }
+}
+
+
+.efy_accordion_item.efy_accordion_2 {
+  width: 100%;
+  .efy_question_icon{
+    left: 20px;
+  }
+  .card .card-header{
+    padding: 25px 50px;
+    h3{
+      @include font-size(16px);
+    }
+  }
+  .efy_accordion_icon{
+    right: 20px;
+  }
+  .card-body {
+    padding: 0px 25px 40px 50px;
+  }
+}

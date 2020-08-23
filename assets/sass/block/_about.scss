@@ -1,0 +1,162 @@
+.efy_about_img_wrap{
+	position: relative;
+	.efy_about_img_01{
+		box-shadow: 0 3px 40px rgba(0, 0, 0, 0.16);
+		border-radius: 5px;
+		overflow: hidden;
+		img{
+			width: 100%;
+			height: auto;
+			object-fit:cover;
+		}
+	}
+	.efy_about_img_02 {
+		position: absolute;
+		box-shadow: 0 5px 50px rgba(0, 0, 0, 0.04);
+		border-radius: 5px;
+		overflow: hidden;
+		border: 16px solid $color-white;
+		right: 10px;
+		bottom: -55px;
+		&:before{
+			background-color: rgba(255, 255, 255, .7);
+			content: "";
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			position: absolute;
+
+		}
+		.efy_video_icon{
+			position: absolute;
+			top: 50%;
+			background-color: $color-mantis;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 60px;
+			height: 60px;
+			line-height: 60px;
+			border-radius: 100%;
+			text-align: center;
+			box-shadow: 0 5px 30px rgba(132, 197, 79, 0.26);
+			.efy_popup_youtube{
+				display:block;
+			}
+		}
+		
+	}
+
+}
+.efy_default_content{
+	.efy_our_mission_content{
+		ul{
+			li{
+				margin: 20px 0;
+				color: $color-ebony;
+				font-weight: 600;
+				&:first-child{
+					margin-top: 0;
+				}
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+
+// v2
+.efy_about_section.efy_about_2 {
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
+
+// efy about inner page stylesheet
+
+.efy_default_content.client_history{
+	h3{
+		@include font-size(32px);
+		font-weight: 500;
+		line-height: 1.26
+	}
+}
+
+.efy_client_history{
+	display: flex;
+	.efy_client_wrap{
+		display: flex;
+		flex: 0 0 54%;
+		.efy_client_img{
+			width: 62px;
+			height: 62px;
+			border-radius: 100%;
+			overflow: hidden;
+			border: 4px solid $color-mantis;
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit:cover;
+			}
+		}
+		.efy_client_name {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+}
+
+
+.efy_about_img_wrap.efy_about_3 {
+	.efy_about_img_01{
+		position: relative;
+		overflow: visible;
+		box-shadow: none;
+			&:before {
+			width: calc(100% + 30px);
+			height: calc(100% + 30px);
+			position: absolute;
+			content: "";
+			left: -15px;
+			top: -15px;
+			right: -16px;
+			bottom: -16px;
+			border: 3px dashed #EEEEEE;
+			z-index: 1;
+			border-radius: 5px;
+		}
+	}
+	.efy_about_img_02{
+		border: none;
+		z-index: 1;
+		overflow: visible;
+		img{
+			border-radius: 5px;
+		}
+		&:before{
+			content: none;
+		}
+		&:after {
+			width: calc(100% + 20px);
+			height: calc(100% + 20px);
+			position: absolute;
+			content: "";
+			left: -10px;
+			top: -10px;
+			right: -16px;
+			bottom: -16px;
+			border: 3px dashed #EEEEEE;
+			z-index: 1;
+			border-radius: 5px;
+		}
+	}
+}
+
+.efy_our_mission_content.efy_about_3{
+	ul{
+		column-count: 2;
+	}
+}

@@ -1,0 +1,25 @@
+.efy_urgent_causes_wrap{
+	box-shadow: 0 10px 60px rgba(0, 0, 0, 0.06);
+	border-radius: 5px;
+	padding: 75px 0 0 52px;
+	position: relative;
+	top: -150px;
+}
+.efy_urgent_causes{
+	h5{
+		padding: 6px 38px 5px 25px;
+		border-radius: 50px 50px 50px 0;
+		letter-spacing: .5px;
+		margin: 0;
+	}
+}
+.efy_urgent_causes.recent_event {
+	position: absolute;
+	bottom: -10px;
+	left: 30px;
+}
+.efy_urgent_causes.efy_v2{
+	position: absolute;
+	top: -15px;
+	left: 52px;
+}

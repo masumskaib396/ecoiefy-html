@@ -1,0 +1,280 @@
+.efy_shop_single_item{
+	position: relative;
+	z-index: 0;
+	margin-bottom: 70px;
+	padding: 0 15px;
+	&:hover .efy_shop_hover{
+		bottom: 30px;
+		opacity: 1;
+	}
+	&:hover .efy_shop_single_img:before{
+		opacity: 1;
+	}
+	.efy_shop_single_img{
+		background-color: #EBEBEB;
+		border: 1px solid #EBEBEB;
+		border-radius: 5px;
+		overflow: hidden;
+		min-height: 333px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		&:before{
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			background-color: rgba(255, 255, 255, .9);
+			@include transition;
+		}
+		.efy_shop_trending{
+			position: absolute;
+			top: 10px;
+			right: 0;
+			padding: 7px 10px;
+			border-radius: 3px 0 0 3px;
+			ul{
+				@include ecoiefy_ul;
+				li{
+					color: $color-mysin;
+					@include font-size($fs-x-small);
+					color: $color-white;
+					font-family: $font-title;
+					font-weight: 500;
+				}
+				i{
+					@include font-size(12px);
+				}
+			}
+		}
+
+	}
+	.efy_shop_hover {
+	    position: absolute;
+	    bottom: 0;
+	    width: 100%;
+	    opacity: 0;
+	    @include transition;
+	    h3{
+			@include font-size($fs-x-small);
+			margin-bottom: 15px;
+		}
+	}
+	.efy_shop_content{
+		padding: 24px 0 33px;
+		h3{
+			@include font-size($fs-medium);
+			margin-bottom: 5px;
+			font-weight: 600;
+		}
+		p{
+			margin: 0 0 15px;
+		}
+	}
+	&:before{
+		content: "";
+		position: absolute;
+		background-color: $color-white;
+		width: 100%;
+		height: calc(100% - 140px);
+		left: 0;
+		bottom: 0;
+		box-shadow: 0 5px 50px rgba(0, 0, 0, 0.04);
+		z-index: -1;
+	}
+}
+ul.efy_star_icon{
+	@include ecoiefy_ul;
+	li{
+		display: inline-block;
+		color: $color-mysin;
+		span{
+			color: $color-ebony;
+			font-weight: 500;
+		}
+	}
+}
+
+// SINGLE SHOP
+#efy_shop_slider_1 {
+	padding: 30px;
+	position: relative;
+	margin-bottom: 30px;
+	&:before{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: calc(100% - 165px);
+		bottom: 0;
+		left: 0;
+		box-shadow: 0 5px 50px rgba(0, 0, 0, 0.04);
+		z-index: -1;
+		background-color: $color-white;
+	}
+	.efy_shop_single_slider {
+		background-color: #EBEBEB;
+		z-index: 0;
+		border-radius: 5px;
+		border: 1px solid #EBEBEB;
+
+	}
+}
+
+#efy_shop_slider_2 {
+	.efy_shop_single_slider {
+		width: 70px;
+		height: 70px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 3px;
+		border: 1px solid #EBEBEB;
+		@include transition;
+		&:hover{
+			border: 1px solid $color-mantis;
+		}
+	}
+	img{
+		width: 40px;
+		height: 40px;
+	}
+	
+}
+
+
+ul.efy_star_icon.efy_single_shop_page{
+	display: inline-block;
+}
+
+
+.shop-quantity {
+  float: left;
+  position: relative;
+}
+.efy_count_input{
+	border-bottom: 2px solid rgba(187, 187, 187, 0.23);
+	input {
+	  border: none;
+	  border-radius: 50px;
+	  width: 151px;
+	  text-align: center;
+	  font-weight: 600;
+	  padding: 20px 53px;
+	  color: $color-ebony;
+	  @include font-size($fs-medium);
+	}
+	.incr-btn {
+	  position: absolute;
+	  text-align: center;
+	  top: 50%;
+	  right: 25px;
+	  text-decoration: none;
+	  transform: translateY(-50%);
+	  color: $color-mantis;
+	  @include font-size(35px);
+	  font-weight: 500;
+	  &:first-child{
+	  	right: auto;
+  		left: 25px;
+	  }
+	}
+}
+#efy_shop_submit_btn {
+	font-weight: 600;
+	border: none;
+	padding: 22px 20px;
+	cursor: pointer;
+	border-radius: 50px 0 50px 50px;
+	display: inline-block;
+	font-family: $font-title;
+	color: $color-white;
+	background-color: $color-mantis;
+	@include transition;
+	@include font-size($fs-x-small);
+	&:hover{
+		background-color: $color-ebony;
+	}
+	i{
+		@include font-size(7px);
+	}
+}
+
+
+ul.efy_social_icon.efy_shop_page{
+	display: inline-block;
+	padding: 0;
+	li{
+		margin: 0 15px;
+		&:first-child{
+			margin-left: 0;
+		}
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
+
+
+.efy_shop_radio_btn {
+	display: flex;
+	align-items: center;
+	.efy_color_picker{
+		font-weight: 600;
+		@include font-size($fs-medium);
+	}
+}
+
+.efy_inner_radio_wrap{
+	display: flex;
+	.efy_shop_radio_input {
+		position: relative;
+		border-radius: 100%;
+		[type="radio"]:checked,
+		[type="radio"]:not(:checked){
+			position: absolute;
+  			left: -9999px;
+		}
+		[type="radio"]:checked + label, 
+		[type="radio"]:not(:checked) + label {
+		  position: relative;
+		  cursor: pointer;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  color: $color-ebony;
+		  background-color: transparent;
+		  margin: 0;
+		  width: 27px;
+		  height: 27px;
+		  border-radius: 100%;
+		  @include transition;
+		}
+		[type="radio"]:checked + label:after, 
+		[type="radio"]:not(:checked) + label:after {
+		  content: "\eb04";
+		  font-family: "charity_icon";
+		  color: $color-white;
+		  position: absolute;
+		  top: 8px;
+		  right: 7px;
+		  border-radius: 100%;
+		  @include font-size(12px);
+		  @include transition;
+		}
+		[type="radio"]:not(:checked) + label:after {
+		  opacity: 0;
+		  -webkit-transform: scale(0);
+		  transform: scale(0);
+		}
+		[type="radio"]:checked + label:after {
+		  opacity: 1;
+		  -webkit-transform: scale(1);
+		  transform: scale(1);
+		}
+	}
+}
